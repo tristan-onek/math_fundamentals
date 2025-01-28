@@ -3,12 +3,10 @@ import math
 
 def algebra_demo():
     print("\n--- Algebra: Solving Linear Equations ---")
-    # Solve 2x + 5 = 15
-    a = 2
-    b = 5
-    c = 15
+    # Solve...x + 5 = 15.
+    a,b,c = 1,5,15
     x = (c - b) / a
-    print(f"Equation: 2x + 5 = 15\nSolution: x = {x}")
+    print(f"Equation: x + 5 = 15\nSolution: x = {x}")
 
 def geometry_demo():
     print("\n--- Geometry: Area and Perimeter Calculations ---")
