@@ -13,6 +13,16 @@ f = lambda x: x**2 - 4
 root = fsolve(f, x0=1)  # initial guess at x0 = 1
 print(f"Root of x^2 - 4: {root}")
 
+# Cubic Root Finding Example - Solve f(x) = x^3 - 6x^2 + 11x - 6:
+f2 = lambda x: x**3 - 6*x**2 + 11*x - 6
+root2 = fsolve(f2, x0=[1, 2, 3])  # Multiple initial guesses
+print(f"Roots of x^3 - 6x^2 + 11x - 6: {root2}")
+
+# Trigonometric Root Finding - Solve f(x) = sin(x) - 0.5
+f3 = lambda x: np.sin(x) - 0.5
+root3 = fsolve(f3, x0=[0, 3, 6])  # Multiple guesses for periodic function
+print(f"Roots of sin(x) - 0.5: {root3}")
+
 # Interpolation:
 x = np.array([0, 1, 2, 3, 4])
 y = np.array([1, 2.7, 5.8, 6.6, 7.5])
